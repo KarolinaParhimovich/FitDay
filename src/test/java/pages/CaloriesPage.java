@@ -8,7 +8,6 @@ public class CaloriesPage extends BasePage {
     public CaloriesPage(WebDriver driver) {
         super(driver);
     }
-
     private By ADD_FOOD = By.xpath("(//span[text()='Add »'])[1]");
     private By INPUT_FOOD = By.xpath("//input[@value=\"What did you eat today?\"]");
     private By NAME_OF_DISH = By.xpath("//tr[@class='foods foods_s-sr26-f20092']//td[@class='name']//a");
@@ -36,7 +35,8 @@ public class CaloriesPage extends BasePage {
         log.debug(String.format("Attempt to click element:%s",ADD_TO_FOOD_LOG));
         driver.findElement(ADD_TO_FOOD_LOG).click();
         log.debug(String.format("Attempt to find text of element %s",ITEM_CALORIES_FOOD));
-        return driver.findElement(ITEM_CALORIES_FOOD).getText();
+        return
+                driver.findElement(ITEM_CALORIES_FOOD).getText();
     }
     public String addingActiv(){
         log.debug(String.format("Attempt to click element:%s",ADD_ACTIV));

@@ -60,5 +60,4 @@ public class CreatingAccountPage extends BasePage {
         log.debug(String.format("Attempt to find message %s",attentionMessage2));
         return driver.findElement(attentionMessage2).getText();
     }
-
 }
