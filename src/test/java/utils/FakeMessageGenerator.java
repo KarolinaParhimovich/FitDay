@@ -22,4 +22,13 @@ public class FakeMessageGenerator {
     public static String generateNewCurrentWeight(){
         return String.valueOf(new Faker().number().numberBetween(40,140));
     }
+    public static String generateNewName(){
+        return new Faker().name().username();
+    }
+    public static String generateNewPassword(){
+        return new Faker().internet().password();
+    }
+    public static String generateNewEmail(){
+        return new Faker().internet().emailAddress();
+    }
 }

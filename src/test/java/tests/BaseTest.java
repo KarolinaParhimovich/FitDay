@@ -23,6 +23,7 @@ public class BaseTest {
         driverManager.startMaximize();
         driver = driverManager.getDriver();
     }
+
     public WebDriver getDriver() {
         return driverManager.getDriver();
     }

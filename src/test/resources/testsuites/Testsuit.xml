@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FitDay Test">
+    <test name="Registration and Login" thread-count="2" parallel="classes">
+        <classes>
+            <class name="tests.RegistrationTest"></class>
+            <class name="tests.LoginTests"></class>
+        </classes>
+    </test>
+    <test name="Options of application" thread-count="3" parallel="classes">
+        <classes>
+            <class name="tests.CaloriesTests"></class>
+            <class name="tests.MoodTest"></class>
+            <class name="tests.WeightTest"></class>
+        </classes>
+    </test>
+    <test name="Forum" thread-count="2" parallel="methods">
+        <classes>
+            <class name="tests.ForumTests"></class>
+        </classes>
+    </test>
+</suite>
